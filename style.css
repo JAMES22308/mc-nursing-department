@@ -125,7 +125,7 @@ form{
     margin-top: 20px;
 }
 .navbar h2{
-  font-size: clamp(1.25rem, 0.4688rem + 2.5vw, 1.875rem);
+  font-size: clamp(0.9375rem, 0.7031rem + 0.75vw, 1.125rem);
   font-family: "Roboto Mono variant0", Tofu;
 }
 
