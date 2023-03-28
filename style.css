@@ -110,8 +110,12 @@ button:hover{
 
 .appointment{
     padding-top: 6px;
+    
     position: absolute;
     font-weight: bold;
+    letter-spacing: 10px;
+    font-size: clamp(0.875rem, 0.5625rem + 1vw, 1.125rem);
+
     
 }
 
