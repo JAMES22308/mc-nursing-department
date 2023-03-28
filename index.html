@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="style.css">
+    <title>Nursing's Portal</title>
+</head>
+<body>
+  <div class="container ">
+    <div class="navbar">
+      <a href="https://www.facebook.com/groups/773588663182007" target="_blank"><img src="mc-logo.png" alt="" class="logo" /></a>
+      
+      <h2>MC-Nursing Dept.</h2>
+      <nav >
+        <ul id="menulist" class="menu1">
+          <li><a href="" onclick="toggleservice(event)">Services </a></li>
+          <li><a href="" onclick="toggledoctor(event)">Our Doctors </a></li>
+          <li><a href="" onclick="toggleabout(event)">About Us </a></li>
+          <li><a href="" onclick="togglecontact(event)">Contact Us </a></li>
+        </ul>
+      </nav>
+      <img src="burgir.png" alt="" class="menu" onclick="togglemenu(event)" />
+    </div>
+  </div>
+   
+    <form action="https://formsubmit.co/michaeljamessoria@gmail.com" method="POST" class="w-100 d-flex justify-content-center" onclick="handleClick(event)"/>
+     <div class="appointment">APPOINTMENT</div>
+      <div class="wrapper ">
+            
+            <div class="columns">
+              
+              <label for="">Full Name</label>
+              <input
+                name="Fullname"
+                type="text"
+                class="w-100"
+                id="first"
+                placeholder="SURNAME-FIRSTNAME-MIDDLENAME"
+                required
+              />
+              <label for="">Gender</label>
+              <input
+                name="gender"
+                type="text"
+                class="w-100"
+                id="last"
+                placeholder="MALE/FEMALE/OTHER"
+                required
+              />
+              <label for="">Email</label>
+              <input
+                name="Email"
+                type="email"
+                class="w-100"
+                id="email"
+                placeholder="ENTER YOUR EMAIL"
+                required
+              />
+              <label for="">Contact Number</label>
+              <input
+                name="Number"
+                type="text"
+                class="w-100"
+                id="number"
+                placeholder="ENTER YOUR NUMBER"
+                required
+              />
+              <label for="">Age</label>
+              <input name="Age of birth" type="number" class="w-100" id="date" placeholder="ENTER YOUR AGE" required />
+              <label for="">Civil Status</label>
+              <input name="Civil Status" type="text" id="status"  class="w-100" placeholder="ENTER YOUR STATUS" required>
+              <label for="">Occupation</label>
+              <input name="Occupation" type="text" id="Occupation"  class="w-100" placeholder="ENTER YOUR OCCUPATION">
+              <label for="">Name of Husband/Wife</label>
+              <input name="Name of Husband/Wife" type="text" id="partner"  class="w-100" placeholder="NAME OF HUSBAND/WIFE">
+              <label for="">Place of Birth</label>
+              <input name="Place of Birth" type="text" id="pbirth"  class="w-100" placeholder="ENTER YOUR PLACE OF BIRTH">
+            </div>
+
+            <div class="columns">
+              <label for="">Address</label>
+              <input
+                name="Address"
+                type="text"
+                class="w-100"
+                id="first"
+                placeholder="PUROK-BARANGGAY-TOWN-PROVINCE"
+                required
+              />
+              <label for="">Baranggay Captain</label>
+              <input
+                name="Baranggay Captain"
+                type="text"
+                class="w-100"
+                id="number"
+                placeholder="BARANGGAY CAPTAIN"
+                required
+              />
+              <label for="">Nationality</label>
+              <input
+                name="Nationality"
+                type="text"
+                class="w-100"
+                id="last"
+                placeholder="ENTER YOUR NATIONALITY"
+                required
+              />
+              <label for="">Religion</label>
+              <input
+                name="Religion"
+                type="text"
+                class="w-100"
+                id="email"
+                placeholder="ENTER YOUR RELIGION"
+                required
+              />
+              
+              <label for="">Father's Name</label>
+              <input
+                name="father's Name"
+                type="text"
+                class="w-100"
+                id="number"
+                placeholder="SURNAME-FIRSTNAME"
+                required
+              />
+              <label for="">Mother's Name</label>
+              <input
+                name="Mother's Name"
+                type="text"
+                class="w-100"
+                id="number"
+                placeholder="SURNAME-FIRSTNAME"
+                required
+              />
+              
+              <label for="">Employed By:</label>
+              <input name="Employed By" type="text" class="w-100" id="date" placeholder="EMPLOYED BY" />
+              <label for="">Salary</label>
+              <input name="Salary " type="number" class="w-100" id="salary" placeholder="ANNUAL SALARY" />
+              <label for="">Date&Time of Check-up</label>
+              <input name="Appointment Time" type="datetime-local" class="w-100" id="date" required />
+            </div>
+            <textarea
+              name="Reason of visit"
+              id=""
+              type="text"
+              class="textarea mt-4"
+              placeholder="REASON OF VISIT e.g. Masakit ang katawan kulang sa kiss."
+              required
+            ></textarea>
+            <div class="submit2">
+              <div class="submit w-100 d-flex justify-content-center">
+                <button>Submit <img src="sendingarrow.png" alt=""></button>
+              </div>
+            </div>
+           
+          </div>
+        </form>
+        <div class="maps ">
+          <p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3869.251318629204!2d122.9547828143154!3d14.12131239242906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3398ae45a28f0f05%3A0x3ed3d387051e1048!2sCamarines%20Norte%20Provincial%20Hospital!5e0!3m2!1sen!2sph!4v1679968292095!5m2!1sen!2sph" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </p>
+        </div>
+        <div class="steto d-flex justify-content-center mt-5">
+          <div class="steto-img w-75">
+            <img src="steto2.jpg" alt="">
+          </div>
+        </div>
+          <div class="footer mt-5 w-100 bg-warning pt-3">
+            
+              <div class="box">
+                <h2 class="d-flex justify-content-center w-100">
+                  PHILIPPINE RED CROSS
+                </h2>
+                <p>
+                  Born officially in 1947, but with roots that traces back to the revolutionary days, the Philippine Red Cross has truly become the premier humanitarian organization in the country, committed to provide quality life-saving services that protect the life and dignity especially of indigent Filipinos in vulnerable situations.
+                </p>
+
+                <p>
+                  Address: 37 EDSA corner Boni Avenue, Mandaluyong City 1550 <br>
+                  Hotline: 143 Trunkline +63 2 8790 2300
+                </p>
+              </div>
+              <div class="box ">
+                <h2 class="w-100 d-flex justify-content-center">FOLLOW US</h2>
+                <div class="social-media2 d-flex justify-content-center">
+                  <div class="social-media d-flex justify-content-center w-50 ">
+                    <p class="w-25 d-flex justify-content-center"><a href="https://www.facebook.com/phredcross/" target="_blank"><img src="facebook (2).png" alt=""></a></p>
+                    <p class="w-25 d-flex justify-content-center"><a href="https://www.instagram.com/philredcross/"  target="_blank"><img src="instagram (1).png" alt=""></a></p>
+                    <p class="w-25 d-flex justify-content-center"><a href="https://twitter.com/philredcross"  target="_blank"><img src="twitter.png" alt=""></a></p>
+                    <p class="w-25 d-flex justify-content-center"> <a href="https://www.youtube.com/c/PhilippineRedCrossOfficial"  target="_blank"><img src="youtube.png" alt=""></a></p>
+                    </div>
+                </div>
+                <div class="subscribe   mt-3">
+                  <h3 class="w-100 d-flex justify-content-center">SUBSCRIBE</h3>
+                </div>
+                
+            </div>
+            
+           
+           
+          </div>
+          <div class="copyright w-100 d-flex justify-content-center bg-success text-white pt-2 ">
+            <div class="copy">
+              <p>Copyright 2023</p>
+            </div>
+            <div class="redcross">
+              <p>Red Cross</p>
+            </div>
+          </div>
+</body>
+<script>
+  const menulist = document.querySelector("#menulist");
+
+  menulist.style.maxHeight = "0px";
+  function togglemenu(event) {
+    if (menulist.style.maxHeight == "0px") {
+      menulist.style.maxHeight = "150px";
+     
+    } else {
+      menulist.style.maxHeight = "0px";
+    }
+  }
+  function toggleservice(event){
+    alert("Under Develop By James")
+    
+  }
+  function toggledoctor(event){
+    alert("Under Develop By James")
+  }
+  function toggleabout(event){
+    alert("Under Develop By James")
+  }
+  function togglecontact(event){
+    alert("Under Develop By James")
+  }
+</script>
+</html>
