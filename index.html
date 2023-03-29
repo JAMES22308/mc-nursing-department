@@ -21,7 +21,7 @@
       <h2>Nursing Dept.</h2>
       <nav >
         <ul id="menulist" class="menu1">
-          <li><a href="" onclick="toggleservice(event)">Services </a></li>
+          <li><a href="services.html" onclick="toggleservice(event)" target="_blank">Services </a></li>
           <li><a href="" onclick="toggledoctor(event)">Our Doctors </a></li>
           <li><a href="" onclick="toggleabout(event)">About Us </a></li>
           <li><a href="" onclick="togglecontact(event)">Contact Us </a></li>
@@ -33,7 +33,7 @@
    
     <form action="https://formsubmit.co/michaeljamessoria@gmail.com" method="POST" class="w-100 d-flex justify-content-center" onclick="handleClick(event)"/>
      <div class="appointment ">APPOINTMENT</div>
-      <div class="wrapper ">
+      <div class="wrapper " id="wrap">
             
             <div class="columns">
               
@@ -154,11 +154,11 @@
               id=""
               type="text"
               class="textarea mt-4"
-              placeholder="REASON OF VISIT"
+              placeholder="REASON OF VISIT e.g. masakit ang katawan kakaselpon"
               required
             ></textarea>
             <div class="submit2">
-              <div class="submit w-100 d-flex justify-content-center">
+              <div id="subs" class="submit w-100 d-flex justify-content-center" onclick="handleButton(event)">
                 <button>Submit <img src="sendingarrow.png" alt=""></button>
               </div>
             </div>
@@ -243,5 +243,6 @@
   function togglecontact(event){
     alert("Under Develop By James")
   }
+  
 </script>
 </html>
