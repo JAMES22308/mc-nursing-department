@@ -194,7 +194,7 @@ form{
   nav ul li a:hover {
     color: rgba(0, 0, 0, 0.305);
   }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 991px) {
     nav ul {
       width: 100%;
       background: rgb(57, 44, 136);
