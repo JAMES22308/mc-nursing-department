@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      .wrapper-contact {
+        display: grid;
+        gap: 50px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      }
+      .back-button img {
+        height: auto;
+        width: 30px;
+      }
+      .back-button {
+        margin-top: 20px;
+      }
+      .wrap-service h1 {
+        border-bottom: 3px solid;
+        padding-bottom: 20px;
+        border-color: orange;
+        font-size: clamp(1.25rem, 0.4688rem + 2.5vw, 1.875rem);
+      }
+      input {
+        border: none;
+        border-bottom: 2px solid white;
+        margin-bottom: 20px;
+        background: rgba(255, 166, 0, 0.693);
+        color: black;
+      }
+
+      textarea {
+        margin-bottom: 5px;
+
+        background: orange;
+        border-color: white;
+        border: none;
+        border-bottom: 2px solid white;
+        font-size: 10px;
+      }
+      button {
+        border: none;
+        color: white;
+        padding: 3px;
+        border-radius: 4px;
+      }
+      button:hover {
+        background: rgba(56, 44, 136, 0.749);
+      }
+      form {
+        background: orange;
+        border-radius: 2px;
+      }
+      form h4 {
+        margin-top: 10px;
+      }
+      .row h4 {
+        margin-top: 10px;
+      }
+      button {
+        font-weight: bold;
+        background: rgb(57, 44, 136);
+        padding: 5px;
+        margin-bottom: 10px;
+      }
+      .row-wrap img {
+        width: 20px;
+        height: 20px;
+        margin-right: 20px;
+        margin-bottom: 15px;
+      }
+      .row-wrap {
+        box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.23);
+      }
+
+      @media only screen and (max-width: 600px) {
+        .back-button img {
+          position: fixed;
+        }
+      }
+      .social-media img {
+        height: 20px;
+        width: 20px;
+        transition: 0.5s;
+      }
+      .social-media img:hover {
+        height: 25px;
+        width: 25px;
+        transition: 0.5s;
+      }
+      .social-media {
+        height: 30px;
+      }
+      .footer {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        border: brown;
+        font-size: clamp(0.625rem, 0rem + 2vw, 1.125rem);
+      }
+      .maps-2 {
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="back-button">
+      <a class="mx-3" href="index.html"><img src="left-arrow.png" alt="" /></a>
+    </div>
+    <div
+      class="wrap-service w-100 d-flex justify-content-center align-items-end mb-5"
+    >
+      <h1 class="w-25 d-flex justify-content-center">Contact Us</h1>
+    </div>
+    <div
+      class="wrapper-contact2 w-100 d-flex justify-content-center align-items-end"
+    >
+      <div class="wrapper-contact w-75 h-75">
+        <div class="row">
+          <form action="https://formsubmit.co/991766dc592faf46978e576fb502eb44 " method="POST" />
+            <h4 style="color: white">SEND US MESSAGE</h4>
+            <label for="">Name</label>
+            <input type="text" class="w-100" name="Name" />
+            <label for="">Email</label>
+            <input type="email" class="w-100" name="Email" />
+            <label for="">Subject</label>
+            <input type="text" class="w-100" name="Subject" />
+            <label for="">Message</label>
+            <textarea
+              class="w-100"
+              name="Message"
+              id=""
+              cols="30"
+              rows="5"
+            ></textarea>
+            <button>SEND</button>
+          </form>
+        </div>
+        <div class="row">
+          <div class="row-wrap">
+            <h4 class="contact">CONTACT INFORMATION</h4>
+            <p class="mb-3">
+              We're open for any suggestion or just to have a chat
+            </p>
+            <h6 class="d-flex">
+              <img src="location-pin.png" alt="" />
+              <p>J. Lukban Street, Daet, Camarines Norte, Philippines</p>
+            </h6>
+            <h6 class="d-flex">
+              <img src="phone-call.png" alt="" />
+              <p>+63 54 440 0121</p>
+            </h6>
+            <h6 class="d-flex">
+              <img src="email.png" alt="" />
+              <p>cnphosp@yahoo.com</p>
+            </h6>
+            <h6 class="d-flex">
+              <img src="web.png" alt="" />
+              <p>
+                <a
+                  href="https://www.facebook.com/phocamnorte/"
+                  style="text-decoration: none"
+                  target="_blank"
+                  >Camarines Norte Provincial Hospital</a
+                >
+              </p>
+            </h6>
+            <div class="maps-2 d-flex justify-content-end">
+              <div class="maps w-100">
+                <p>
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3869.251318629204!2d122.9547828143154!3d14.12131239242906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3398ae45a28f0f05%3A0x3ed3d387051e1048!2sCamarines%20Norte%20Provincial%20Hospital!5e0!3m2!1sen!2sph!4v1679968292095!5m2!1sen!2sph"
+                    width="100%"
+                    height="180"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer mt-5 w-100 bg-warning pt-3">
+      <div class="box" align="center">
+        <h2 class="d-flex justify-content-center w-100">
+          PHILIPPINE RED CROSS
+        </h2>
+        <p>
+          Born officially in 1947, but with roots that traces back to the
+          revolutionary days, the Philippine Red Cross has truly become the
+          premier humanitarian organization in the country, committed to provide
+          quality life-saving services that protect the life and dignity
+          especially of indigent Filipinos in vulnerable situations.
+        </p>
+
+        <p>
+          Address: 37 EDSA corner Boni Avenue, Mandaluyong City 1550 <br />
+          Hotline: 143 Trunkline +63 2 8790 2300
+        </p>
+      </div>
+      <div class="box">
+        <h2 class="w-100 d-flex justify-content-center">FOLLOW US</h2>
+        <div class="social-media2 d-flex justify-content-center">
+          <div class="social-media d-flex justify-content-center w-50">
+            <p class="w-25 d-flex justify-content-center">
+              <a href="https://www.facebook.com/phredcross/" target="_blank"
+                ><img src="facebook (2).png" alt=""
+              /></a>
+            </p>
+            <p class="w-25 d-flex justify-content-center">
+              <a href="https://www.instagram.com/philredcross/" target="_blank"
+                ><img src="instagram (1).png" alt=""
+              /></a>
+            </p>
+            <p class="w-25 d-flex justify-content-center">
+              <a href="https://twitter.com/philredcross" target="_blank"
+                ><img src="twitter.png" alt=""
+              /></a>
+            </p>
+            <p class="w-25 d-flex justify-content-center">
+              <a
+                href="https://www.youtube.com/c/PhilippineRedCrossOfficial"
+                target="_blank"
+                ><img src="youtube.png" alt=""
+              /></a>
+            </p>
+          </div>
+        </div>
+        <div class="subscribe mt-3">
+          <h2 class="w-100 d-flex justify-content-center">SUBSCRIBE</h2>
+        </div>
+      </div>
+    </div>
+    <div
+      class="copyright w-100 d-flex justify-content-center bg-success text-white pt-2"
+    >
+      <div class="copy">
+        <p>Copyright 2023</p>
+      </div>
+      <div class="redcross">
+        <p>Red Cross</p>
+      </div>
+    </div>
+  </body>
+</html>

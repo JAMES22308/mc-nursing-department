@@ -33,12 +33,11 @@ textarea{
         height: 100%;
         padding: 0px;
       }
-      
-    .navbar{
-      position: fixed;
-    }
-
-      
+      .navbar{
+        position: fixed;
+        
+      }
+     
       
 }
 
@@ -78,6 +77,7 @@ textarea{
 }
 
 body{
+ 
   background: white;
 }
 button{
@@ -113,20 +113,19 @@ button:hover{
 
 }
 
-.appointment{
-    padding-top: 6px;
-    position: absolute;
-    font-weight: bold;
-    letter-spacing: 10px;
-    font-size: clamp(1rem, 0.8438rem + 0.5vw, 1.125rem);
-
+.form-title h5{
+    padding-top: 40px;    
+    font-weight: 500;
+    letter-spacing: 10px;   
+    font-size: clamp(0.9375rem, 0.5469rem + 1.25vw, 1.25rem);
+    color: solid rgba(0, 0, 0, 0.681);
     
 }
 
 
 
 form{
-    margin-top: 20px;
+    margin-top: 0px;
 }
 .navbar h2{
   
@@ -150,7 +149,7 @@ form{
 
 
 
-
+/* THIS IS ALL ABOUT HEADER */  
 .container {
     width: 100%;
     min-height: 25vh;
@@ -170,6 +169,7 @@ form{
     height: 100px;
     margin-right: 10px;
   }
+
   .menu {
     width: 50px;
     cursor: pointer;
@@ -189,12 +189,13 @@ form{
   nav ul li a {
     text-decoration: none;
     color: #000;
-    font-size: 18px;
+    font-size: clamp(0.75rem, 0.2813rem + 1.5vw, 1.125rem);
   }
   nav ul li a:hover {
     color: rgba(0, 0, 0, 0.305);
   }
-  @media only screen and (max-width: 991px) {
+  
+  @media only screen and (max-width: 700px) {
     nav ul {
       width: 100%;
       background: rgb(57, 44, 136);
@@ -237,23 +238,33 @@ form{
       
       background: orange;
       border: none;
+      
      
     }
     nav ul li a {
      
       color: white;
+       
      
     }
     nav ul li a:hover {
       color: rgba(255, 255, 255, 0.552);
     }
     form{
-      margin-top: 50px;
+      margin-top: 0px;
     }
-    
-   
+
+    .form-title{
+
+      padding-top: 5px;
+    }
+    nav ul {
+      margin-top: 2rem!important;
   }
   
+    
+  }
+
 
 
 
@@ -267,6 +278,7 @@ form{
 
  
 
+/* THIS IS ALL ABOUT FOOTER */
 
   .footer{
     
@@ -279,6 +291,7 @@ form{
     width: 100%;
     height: 75vh;
   }
+  
 
   @media only screen and (max-width: 700px){
     .steto-img img{
@@ -286,7 +299,6 @@ form{
       height: 300px;
     }
    
-    
 
   }
   .submit2{
@@ -316,6 +328,15 @@ form{
     color: red;
     font-style: alkatra;
   }
+  
+
+
+
+
+
+
+
+
   
 
 

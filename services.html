@@ -16,28 +16,266 @@
         padding: 0px;
         margin: 0px;
       }
-      .services2 h4 {
-        color: rgba(0, 0, 0, 0.971);
+      .back-button img {
+        height: auto;
+        width: 30px;
       }
-      .services2 h4:hover {
-        color: rgba(0, 0, 0, 0.589);
+      .wrap-service h1 {
+        border-bottom: 3px solid;
+        padding-bottom: 20px;
+        border-color: orange;
+        font-size: clamp(1.25rem, 0.4688rem + 2.5vw, 1.875rem);
+      }
+      .table {
+        font-size: clamp(0.625rem, 0.2344rem + 1.25vw, 0.9375rem);
+        border-bottom: 3px solid orange;
+      }
+      th {
+        width: 33.3%;
+        border-right: 2px solid white;
+      }
+      .back-button {
+        margin-top: 20px;
+      }
+      @media only screen and (max-width: 600px) {
+        .back-button img {
+          position: fixed;
+        }
+      }
+      .social-media img {
+        height: 20px;
+        width: 20px;
+        transition: 0.5s;
+      }
+      .social-media img:hover {
+        height: 25px;
+        width: 25px;
+        transition: 0.5s;
+      }
+      .social-media {
+        height: 30px;
+      }
+      .footer {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        border: brown;
+        font-size: clamp(0.625rem, 0rem + 2vw, 1.125rem);
       }
     </style>
   </head>
   <body>
-    <div class="services vh-100 w-100 border border-primary">
-      <div class="services2 h-25 d-flex align-items-center mx-3">
-        <h4>
-          <a href="index.html" style="text-decoration: none; color: black"
-            >BACK</a
-          >
-        </h4>
+    <div class="wrapper-services">
+      <div class="back-button">
+        <a class="mx-3" href="index.html"
+          ><img src="left-arrow.png" alt=""
+        /></a>
       </div>
-      <h1
-        class="h1 d-flex justify-content-center h-75 w-100 border border-warning align-items-center"
+
+      <div
+        class="wrap-service w-100 d-flex justify-content-center align-items-end mb-5"
       >
-        NO DATA AVAILABLE
-      </h1>
+        <h1 class="w-25 d-flex justify-content-center">Services</h1>
+      </div>
+    </div>
+    <table class="table w-100 mb-5">
+      <tr bgcolor="orange" align="center">
+        <th>POLICY NO. 0103-16</th>
+        <th>SCHEDULE</th>
+        <th>FOLLOW UP</th>
+      </tr>
+      <tr bgcolor="white" align="center">
+        <td style="font-weight: bold">GENERAL CONSULTATION</td>
+        <td>Monday to Friday <br />8:00 AM - 4:00 PM</td>
+        <td>Regular Check ups</td>
+      </tr>
+      <tr bgcolor="white" align="center">
+        <td style="font-weight: bold">
+          <a
+            href="https://www.google.com/search?q=pediatric&sxsrf=APwXEdd0xMEwGHr56kdvh3kcPjbo6af0-g%3A1680696343771&source=hp&ei=F2QtZOz0LMeloASVhr3YDw&iflsig=AOEireoAAAAAZC1yJw-L14xz1LvpnzGdsNFhUgN72lwo&ved=0ahUKEwis3Kzk2ZL-AhXHEogKHRVDD_sQ4dUDCAk&uact=5&oq=pediatric&gs_lcp=Cgdnd3Mtd2l6EAMyCAgAEIAEELEDMgsIABCABBCxAxCDATIICAAQgAQQsQMyBQgAEIAEMggIABCABBCxAzIFCAAQgAQyCwgAEIAEELEDEIMBMgUIABCABDIICAAQgAQQsQMyBQgAEIAEOgkIIxAnEEYQ-QE6BAgjECc6CwguEIAEELEDEIMBOggILhCABBCxAzoOCC4QgAQQsQMQxwEQ0QM6CggAEIAEELEDEAo6DQgAEIAEELEDEIMBEAo6BwgAEIAEEApQAFjzC2DcDmgAcAB4AIABrQGIAbEJkgEDMS44mAEAoAEB&sclient=gws-wiz"
+            style="text-decoration: none"
+            target="_blank"
+            >PEDIATRICS</a
+          >
+        </td>
+        <td>
+          Monday to Friday <br />
+          8:00 AM - 3:00 PM
+        </td>
+        <td>
+          Regular Check ups <br />Pediatric Clearance <br />Follow-up of
+          discharged patient
+        </td>
+      </tr>
+      <tr bgcolor="white" align="center">
+        <td style="font-weight: bold">
+          <a
+            href="https://www.google.com/search?q=medicine&sxsrf=APwXEdfspBS7Cp1kMudksYic078Q_LlnHg%3A1680696349863&ei=HWQtZLaONJfBhwOEwIzIBA&ved=0ahUKEwj2kKLn2ZL-AhWX4GEKHQQgA0kQ4dUDCA8&uact=5&oq=medicine&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIICAAQigUQkQIyCAgAEIoFEJECMggIABCKBRCRAjIICAAQigUQkQIyCAgAEIoFEJECMggIABCABBCxAzIFCAAQgAQyCAgAEIAEELEDMggIABCABBCxAzIFCAAQgAQ6BAgjECc6CwgAEIAEELEDEIMBOgsIABCKBRCxAxCDAToLCC4QgAQQsQMQgwE6BwgAEIoFEEM6EQguEIAEELEDEIMBEMcBENEDSgQIQRgAUABY7QdgpgxoAHABeACAAfMBiAGsCJIBBTAuNy4xmAEAoAEBwAEB&sclient=gws-wiz-serp"
+            style="text-decoration: none"
+            target="_blank"
+            >MEDICINE</a
+          >
+        </td>
+        <td>
+          Tuesday, Wednesday and Friday <br />
+          1:00 PM - 3:00 PM
+        </td>
+        <td>
+          Follow-up of discharged patient <br />
+          CP Clearance <br />Referral
+        </td>
+      </tr>
+      <tr bgcolor="white" align="center">
+        <td style="font-weight: bold">
+          <a
+            href="https://www.google.com/search?q=surgery&sxsrf=APwXEdeKEQsHN2VAOyNqQvY3Yr8A2yudKQ%3A1680696553048&ei=6WQtZLO8AompoASOn6DwBw&ved=0ahUKEwjz1JPI2pL-AhWJFIgKHY4PCH4Q4dUDCA8&uact=5&oq=surgery&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIKCAAQigUQsQMQQzIHCAAQigUQQzIHCAAQigUQQzIHCAAQigUQQzIICAAQgAQQsQMyBQgAEIAEMgsILhCABBCxAxCDATIFCAAQgAQyBQgAEIAEMgUIABCABDoECCMQJzoNCC4QigUQxwEQ0QMQQzoRCC4QgAQQsQMQgwEQxwEQ0QM6CwgAEIAEELEDEIMBOgcILhCKBRBDOggILhCABBCxA0oECEEYAFAAWLQJYKIMaABwAXgAgAFuiAGwBZIBAzQuM5gBAKABAcABAQ&sclient=gws-wiz-serp"
+            style="text-decoration: none"
+            target="_blank"
+            >SURGERY</a
+          >
+        </td>
+        <td>
+          Monday, Wednesday and Friday <br />
+          10:00 AM - 12:00 PM
+        </td>
+        <td>
+          regular check ups <br />Follow-up of discharged patient <br />Referral
+          <br />Minor Operation
+        </td>
+      </tr>
+      <tr bgcolor="white" align="center">
+        <td style="font-weight: bold">
+          <a
+            href="https://www.google.com/search?q=neurology&sxsrf=APwXEdflrQtEO3nmvmGlbe1XwjbRvvBiyA%3A1680696613897&ei=JWUtZLOsNoitoASu6aPYCg&ved=0ahUKEwjz0pXl2pL-AhWIFogKHa70CKsQ4dUDCA8&uact=5&oq=neurology&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIKCAAQigUQsQMQQzIHCAAQigUQQzILCAAQgAQQsQMQgwEyBQgAEIAEMgUIABCABDIFCAAQgAQyCAgAEIAEELEDMgUIABCABDIFCAAQgAQyBQgAEIAEOgoIABBHENYEELADOgQIIxAnOgsILhCABBCxAxCDAToRCC4QgAQQsQMQgwEQxwEQ0QM6EwguEIoFELEDEIMBEMcBENEDEEM6CggAEIoFEMkDEEM6CAgAEIoFEJIDOg0IABCABBCxAxCDARAKSgQIQRgAUJwIWOoUYN4XaAFwAXgAgAGMAYgBpwiSAQMxLjiYAQCgAQHIAQjAAQE&sclient=gws-wiz-serp"
+            style="text-decoration: none"
+            target="_blank"
+            >NEUROLOGY</a
+          >
+        </td>
+        <td>
+          Monday <br />
+          10:00 AM - 12:00 PM
+        </td>
+        <td>
+          Regular check ups <br />
+          Follow-up of discharged patient <br />
+          Referral
+        </td>
+      </tr>
+      <tr bgcolor="white" align="center">
+        <td style="font-weight: bold">
+          <a
+            href="https://www.google.com/search?q=urology&sxsrf=APwXEddfzhJCcop8aBT-LKK3r70SItx0Hg%3A1680696653809&ei=TWUtZJ_9MILP-QbWzpzwDA&ved=0ahUKEwjf15n42pL-AhWCZ94KHVYnB84Q4dUDCA8&uact=5&oq=urology&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzINCAAQigUQsQMQgwEQQzIHCAAQigUQQzIHCAAQigUQQzINCAAQigUQsQMQgwEQQzIKCAAQigUQsQMQQzIHCAAQigUQQzIGCAAQBxAeMgcIABCKBRBDMgcILhCKBRBDMgoIABCABBAUEIcCOgoIABBHENYEELADOgoIABCKBRCwAxBDSgQIQRgAUMIFWKIGYOYHaAFwAXgAgAF_iAH9AZIBAzAuMpgBAKABAcgBCsABAQ&sclient=gws-wiz-serp"
+            style="text-decoration: none"
+            target="_blank"
+            >UROLOGY</a
+          >
+        </td>
+        <td>Wednesday <br />1:00 Am - 3:00 PM</td>
+        <td>
+          Regular check ups <br />Follow-up of discharged patient <br />
+          Referral
+        </td>
+      </tr>
+      <tr bgcolor="white" align="center">
+        <td style="font-weight: bold">
+          <a
+            href="https://www.google.com/search?q=orthopedic&sxsrf=APwXEdeJmQ6mT1rjCpyu1NACAEwv1ku3Wg%3A1680696731793&ei=m2UtZJL5L5qhoATx0qSYBw&ved=0ahUKEwjSsrGd25L-AhWaEIgKHXEpCXMQ4dUDCA8&uact=5&oq=orthopedic&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIECCMQJzINCAAQigUQsQMQgwEQQzIHCAAQigUQQzINCAAQgAQQFBCHAhCxAzIKCAAQigUQsQMQQzILCAAQgAQQsQMQgwEyBwgAEIoFEEMyBQgAEIAEMggIABCABBCxAzIRCC4QgwEQrwEQxwEQsQMQgAQ6CggAEEcQ1gQQsANKBAhBGABQ4ARY4ARg3QdoAXABeACAAWqIAWqSAQMwLjGYAQCgAQHIAQjAAQE&sclient=gws-wiz-serp"
+            style="text-decoration: none"
+            target="_blank"
+            >ORTHOPEDICS</a
+          >
+        </td>
+        <td>
+          Tuesday, Thursday and friday <br />
+          10:00 AM - 12:00 PM
+        </td>
+        <td>
+          Regular check ups <br />Follow-up of discharged patient <br />
+          Minor Operation <br />
+          Referral
+        </td>
+      </tr>
+      <tr bgcolor="white" align="center">
+        <td style="font-weight: bold">
+          <a
+            href="https://www.google.com/search?q=obgyne&sxsrf=APwXEdcYYSI4UYH-fv5mn_ETvVE1rCXSEA%3A1680696803460&ei=42UtZN3EG4yQ-AadgLnIBw&ved=0ahUKEwidwse_25L-AhUMCN4KHR1ADnkQ4dUDCA8&uact=5&oq=obgyne&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzILCAAQigUQsQMQkQIyBQgAEIAEMg0IABCKBRCxAxCDARBDMgUIABCABDIICAAQBxAeEAoyBggAEAcQHjIHCAAQgAQQCjIGCAAQBxAeMgUIABCABDIHCAAQigUQQzoKCAAQRxDWBBCwAzoKCAAQigUQsAMQQ0oECEEYAFDLDFjLDGCHFWgBcAF4AIABjAGIAYwBkgEDMC4xmAEAoAEByAEKwAEB&sclient=gws-wiz-serp"
+            style="text-decoration: none"
+            target="_blank"
+            >OB-GYNE</a
+          >
+        </td>
+        <td>
+          Monday, Tuesday and Wednesday <br />8:AM - 12:00 PM <br />
+          Thursday <br />8:00 AM - 3:00 PM
+        </td>
+        <td>
+          Regular Prenatal Check up (with laboratory ancillary procedure
+          results) <br />
+          Gynecology Consultation (with laboratory ancillary procedure results)
+        </td>
+      </tr>
+    </table>
+
+    <div class="footer mt-5 w-100 bg-warning pt-3">
+      <div class="box" align="center">
+        <h2 class="d-flex justify-content-center w-100">
+          PHILIPPINE RED CROSS
+        </h2>
+        <p>
+          Born officially in 1947, but with roots that traces back to the
+          revolutionary days, the Philippine Red Cross has truly become the
+          premier humanitarian organization in the country, committed to provide
+          quality life-saving services that protect the life and dignity
+          especially of indigent Filipinos in vulnerable situations.
+        </p>
+
+        <p>
+          Address: 37 EDSA corner Boni Avenue, Mandaluyong City 1550 <br />
+          Hotline: 143 Trunkline +63 2 8790 2300
+        </p>
+      </div>
+      <div class="box">
+        <h2 class="w-100 d-flex justify-content-center">FOLLOW US</h2>
+        <div class="social-media2 d-flex justify-content-center">
+          <div class="social-media d-flex justify-content-center w-50">
+            <p class="w-25 d-flex justify-content-center">
+              <a href="https://www.facebook.com/phredcross/" target="_blank"
+                ><img src="facebook (2).png" alt=""
+              /></a>
+            </p>
+            <p class="w-25 d-flex justify-content-center">
+              <a href="https://www.instagram.com/philredcross/" target="_blank"
+                ><img src="instagram (1).png" alt=""
+              /></a>
+            </p>
+            <p class="w-25 d-flex justify-content-center">
+              <a href="https://twitter.com/philredcross" target="_blank"
+                ><img src="twitter.png" alt=""
+              /></a>
+            </p>
+            <p class="w-25 d-flex justify-content-center">
+              <a
+                href="https://www.youtube.com/c/PhilippineRedCrossOfficial"
+                target="_blank"
+                ><img src="youtube.png" alt=""
+              /></a>
+            </p>
+          </div>
+        </div>
+        <div class="subscribe mt-3">
+          <h2 class="w-100 d-flex justify-content-center">SUBSCRIBE</h2>
+        </div>
+      </div>
+    </div>
+    <div
+      class="copyright w-100 d-flex justify-content-center bg-success text-white pt-2"
+    >
+      <div class="copy">
+        <p>Copyright 2023</p>
+      </div>
+      <div class="redcross">
+        <p>Red Cross</p>
+      </div>
     </div>
   </body>
 </html>

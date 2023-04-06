@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      .wrap-about h1 {
+        border-bottom: 3px solid;
+        padding-bottom: 20px;
+        border-color: orange;
+        font-size: clamp(1.25rem, 0.4688rem + 2.5vw, 1.875rem);
+      }
+      @media only screen and (max-width: 600px) {
+        .wrap-about h1 {
+          width: 100%;
+        }
+        .histo {
+          text-align: center;
+          width: 100%;
+        }
+        .histo2 {
+          display: flex;
+          justify-content: center;
+        }
+        .back-button img {
+          position: fixed;
+        }
+      }
+      .maps {
+        width: 100%;
+      }
+      .histo {
+        font-size: clamp(0.625rem, 0rem + 2vw, 1.125rem);
+      }
+      .about-row {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      }
+      .back-button img {
+        height: auto;
+        width: 30px;
+      }
+      .back-button {
+        margin-top: 20px;
+      }
+      .social-media img {
+        height: 20px;
+        width: 20px;
+        transition: 0.5s;
+      }
+      .social-media img:hover {
+        height: 25px;
+        width: 25px;
+        transition: 0.5s;
+      }
+      .social-media {
+        height: 30px;
+      }
+
+      .footer {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        border: brown;
+        font-size: clamp(0.625rem, 0rem + 2vw, 1.125rem);
+      }
+      .histo {
+        font-size: clamp(0.5625rem, -0.0625rem + 2vw, 1.0625rem);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper-about w-100">
+      <div class="back-button">
+        <a class="mx-3" href="index.html"
+          ><img src="left-arrow.png" alt=""
+        /></a>
+      </div>
+
+      <div
+        class="wrap-about w-100 d-flex justify-content-center align-items-end mb-5 y"
+      >
+        <h1 class="w-25 d-flex justify-content-center">About Us</h1>
+      </div>
+      <div class="about-row2 w-100 d-flex justify-content-center">
+        <div class="about-row">
+          <div class="about-columns mx-3">
+            <img
+              src="marcelo-leal-taF3klwwAWA-unsplash.jpg"
+              alt=""
+              class="w-100 mb-3"
+            />
+          </div>
+
+          <div class="about-columns mx-3">
+            <div class="histo2 w-100">
+              <h5 class="histo w-100">
+                Camarines Norte Provincial Hospital is located in Daet,
+                Camarines Norte. Camarines Norte Provincial Hospital is working
+                in Other travel reservations, General practitioners, Health and
+                medical, Hospitals activities. You can contact the company at
+                (054) 721 5425. You can find more information about Camarines
+                Norte Provincial Hospital at
+                <a href="https://www.camsnorte.com/" target="_blank"
+                  >www.camarinesnorte.gov.ph</a
+                >
+                <br />
+                Camarines Norte Provincial Hospital is a public hospital located
+                in Daet, Camarines Norte, Philippines. It is the primary
+                healthcare facility in the province, providing medical services
+                to the local community and nearby areas. The hospital offers a
+                range of medical services, including emergency care, general
+                medicine, pediatrics, obstetrics and gynecology, surgery, and
+                diagnostic imaging. It also has a laboratory, pharmacy, and
+                blood bank. Camarines Norte Provincial Hospital has a team of
+                medical professionals, including physicians, nurses, and support
+                staff, who are committed to providing quality healthcare to
+                their patients. The hospital is equipped with modern medical
+                equipment and facilities to ensure that patients receive the
+                best possible care. In addition to its medical services, the
+                hospital also conducts community outreach programs and health
+                education campaigns to promote healthy lifestyles and prevent
+                diseases. Overall, Camarines Norte Provincial Hospital plays an
+                essential role in providing healthcare services to the local
+                community and improving the health and well-being of its
+                residents.
+              </h5>
+            </div>
+            <div class="histo2 w-100 mt-3">
+              <h4 class="histo w-75">All Of The Rights Reserved®</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer mt-5 w-100 bg-warning pt-3">
+        <div class="box" align="center">
+          <h2 class="d-flex justify-content-center w-100">
+            PHILIPPINE RED CROSS
+          </h2>
+          <p>
+            Born officially in 1947, but with roots that traces back to the
+            revolutionary days, the Philippine Red Cross has truly become the
+            premier humanitarian organization in the country, committed to
+            provide quality life-saving services that protect the life and
+            dignity especially of indigent Filipinos in vulnerable situations.
+          </p>
+
+          <p>
+            Address: 37 EDSA corner Boni Avenue, Mandaluyong City 1550 <br />
+            Hotline: 143 Trunkline +63 2 8790 2300
+          </p>
+        </div>
+        <div class="box">
+          <h2 class="w-100 d-flex justify-content-center">FOLLOW US</h2>
+          <div class="social-media2 d-flex justify-content-center">
+            <div class="social-media d-flex justify-content-center w-50">
+              <p class="w-25 d-flex justify-content-center">
+                <a href="https://www.facebook.com/phredcross/" target="_blank"
+                  ><img src="facebook (2).png" alt=""
+                /></a>
+              </p>
+              <p class="w-25 d-flex justify-content-center">
+                <a
+                  href="https://www.instagram.com/philredcross/"
+                  target="_blank"
+                  ><img src="instagram (1).png" alt=""
+                /></a>
+              </p>
+              <p class="w-25 d-flex justify-content-center">
+                <a href="https://twitter.com/philredcross" target="_blank"
+                  ><img src="twitter.png" alt=""
+                /></a>
+              </p>
+              <p class="w-25 d-flex justify-content-center">
+                <a
+                  href="https://www.youtube.com/c/PhilippineRedCrossOfficial"
+                  target="_blank"
+                  ><img src="youtube.png" alt=""
+                /></a>
+              </p>
+            </div>
+          </div>
+          <div class="subscribe mt-3">
+            <h2 class="w-100 d-flex justify-content-center">SUBSCRIBE</h2>
+          </div>
+        </div>
+      </div>
+      <div
+        class="copyright w-100 d-flex justify-content-center bg-success text-white pt-2"
+      >
+        <div class="copy">
+          <p>Copyright 2023</p>
+        </div>
+        <div class="redcross">
+          <p>Red Cross</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

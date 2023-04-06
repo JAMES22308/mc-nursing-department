@@ -16,27 +16,32 @@
 <body>
   <div class="container-header ">
     <div class="container ">
-      <div class="navbar ">
+      <div class="navbar">
         <a href="https://www.facebook.com/groups/773588663182007" target="_blank"><img src="mc-logo.png" alt="" class="logo" /></a>
         
         <h2>Nursing Dept.</h2>
         <nav >
-          <ul id="menulist" class="menu1 mt-3">
-            <li><a href="services.html" onclick="toggleservice(event)" >Services </a></li>
-            <li><a href="" onclick="toggledoctor(event)">Our Doctors </a></li>
-            <li><a href="" onclick="toggleabout(event)">About Us </a></li>
-            <li><a href="" onclick="togglecontact(event)">Contact Us </a></li>
+          <ul id="menulist" clas="menu1">
+            <li><a href="services.html" onclick="toggleservice(event)" >Services </a></li>          
+            <li><a href="about.html" onclick="toggleabout(event)">About Us </a></li>
+            <li><a href="contact.html" onclick="togglecontact(event)">Contact Us </a></li>
           </ul>
         </nav>
         <img src="burgir.png" alt="" class="menu" onclick="togglemenu(event)" />
+
       </div>
     </div>
   </div>
+  
  
-   
-    <form action="https://formsubmit.co/michaeljamessoria@gmail.com" method="POST" class="w-100 d-flex justify-content-center" onclick="handleClick(event)"/>
+    <div class="form1">
      
-    <div class="appointment">APPOINTMENT</div>
+      <div class="form-title w-100 d-flex justify-content-center ">
+        <h5>APPOINTMENT</h5>
+      </div>
+      <form action="https://formsubmit.co/michaeljamessoria@gmail.com" method="POST" class="w-100 d-flex justify-content-center " onclick="handleClick(event)"/>
+     
+    
       <div class="wrapper " id="wrap">
             
             <div class="columns">
@@ -169,21 +174,21 @@
            
           </div>
         </form>
-        <div class="maps ">
-          <p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3869.251318629204!2d122.9547828143154!3d14.12131239242906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3398ae45a28f0f05%3A0x3ed3d387051e1048!2sCamarines%20Norte%20Provincial%20Hospital!5e0!3m2!1sen!2sph!4v1679968292095!5m2!1sen!2sph" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </p>
-        </div>
-        <div class="steto d-flex justify-content-center mt-5">
+    </div>
+    
+
+
+        <div class="steto d-flex justify-content-center mt-3">
           <div class="steto-img w-75">
-            <img src="steto2.jpg" alt="">
+            <img src="steto2.jpg" alt=""> <h6>Our expertise at your service.</h6>
           </div>
         </div>
+       
        
         
           <div class="footer mt-5 w-100 bg-warning pt-3">
             
-              <div class="box">
+              <div class="box" align="center">
                 <h2 class="d-flex justify-content-center w-100">
                   PHILIPPINE RED CROSS
                 </h2>
@@ -236,19 +241,11 @@
       menulist.style.maxHeight = "0px";
     }
   }
-  function toggleservice(event){
-    alert("Under Develop By James")
-    
-  }
-  function toggledoctor(event){
-    alert("Under Develop By James")
-  }
-  function toggleabout(event){
-    alert("Under Develop By James")
-  }
-  function togglecontact(event){
-    alert("Under Develop By James")
-  }
+  
+  
+  
+  
+  
   
 </script>
 </html>
