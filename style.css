@@ -161,7 +161,10 @@ form{
     width: 100%;
     display: flex;
     align-items: center;
+    
   }
+  
+  
   .logo {
     width: 100px;
     cursor: pointer;
@@ -178,11 +181,13 @@ form{
   nav {
     flex: 1;
     text-align: right;
+    
   }
   nav ul li {
     list-style: none;
     display: inline-block;
     margin-right: 40px;
+    
     
   }
   
@@ -190,9 +195,13 @@ form{
     text-decoration: none;
     color: #000;
     font-size: clamp(0.75rem, 0.2813rem + 1.5vw, 1.125rem);
+    
+    
   }
+  
   nav ul li a:hover {
     color: rgba(0, 0, 0, 0.305);
+    
   }
   
   @media only screen and (max-width: 700px) {
