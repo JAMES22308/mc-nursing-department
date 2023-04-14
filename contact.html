@@ -24,9 +24,14 @@
       .back-button img {
         height: auto;
         width: 30px;
+        transition: 1s;
       }
       .back-button {
         margin-top: 20px;
+      }
+      .back-button img:hover{
+          transform: scale(1.1);
+          transition: 1s;
       }
       .wrap-service h1 {
         border-bottom: 3px solid;
@@ -110,6 +115,7 @@
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         border: brown;
         font-size: clamp(0.625rem, 0rem + 2vw, 1.125rem);
+        
       }
       .maps-2 {
         height: auto;
